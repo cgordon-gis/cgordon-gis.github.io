@@ -1,4 +1,6 @@
 # cgordon-gis.github.io
 Website for GIS materials
 
-Will replace my existing website eventually.
+Find full website at:
+
+https://cgordon-gis.github.io/
