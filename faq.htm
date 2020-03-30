@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>GIS notes: FAQ</title>
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <script src="js/toc.js" type="text/javascript">
+      </script>
+   </head>
+   <body>
+      <h1>GIS frequently asked questions</h1>
+      <p>Answers to questions that I'm asked frequently, but that aren't in one of the regular workbooks.</p>  
+      <p><strong>March 2020: Please note that at the moment these answers all relate to ArcMap.  I will be updating them to ArcGIS Pro as soon as I have the opportunity.</strong></p>
+      <p>Email me using the address at the bottom of the page if you have any other questions - but please check the workbook for the answer before you do so! Remember that the workbook also lists other sources of help, such as ArcGIS Desktop Help, and that a Google Search can often give you useful information.</p>
+      <h2 class="no-TOC noPrint">Contents</h2>
+      <div id="generated-toc" class="generate_from_h2 generate_to_h3 list_type_ul noPrint">
+      </div>
+
+      <h2>Questions about formats and data</h2>
+
+      <section class="issue">
+	 <h3>I've scanned my field slip and it's in pdf format, but now I can't add it to Arc.</h3>
+
+	 <h4>Problem</h4>
+	 <p class="problem">As you've discovered Arc won't allow you to add pdf files to a map.  You need to convert the pdf to either tiff or jpg formats - either of which will be fine.</p>
+	 <h4>Solution</h4>
+	 <p class="solution">Either rescan the document and select jpg or tiff output, or (and this may be the simpler way to do it!) use one of the many online converters.  <a href="http://smallpdf.com">smallpdf.com</a> comes with a recommendation from the <a href="https://digifoe.wordpress.com/2015/10/16/atoz-of-tel-smallpdf/">Faculty of Environment Blended Learning Enhancement Officer</a>, and is indeed very easy to use.  It can convert between pdf and various file types including jpg.  Blayn also recommends it as a way of compressing the size of large pdfs before you submit them to the VLE (keeping an eye on quality too, though).</p>
+      </section>
+
+      <h2>Questions about editing</h2>
+
+      <section class="issue">
+	 <h3>I'm getting a permissions problem when adding new fields to feature class or when adding new feature class to geodatabase</h3>
+
+	 <h4>Problem</h4>
+	 <p class="problem">I'm trying to add an extra field on the attribute table for my rock types but it tells me the database is in use because it is already opened exclusively by the admin of the computer I'm on, it then tells me to try again when the database is available.</p>
+	 <p class="problem">Alternatively I'm trying to add another feature dataset or class to a geodatabase but it tells me the database is in use because it is already opened exclusively by the admin of the computer I'm on, it then tells me to try again when the database is available.</p>
+	 <h4>Solution</h4>
+	 <p class="solution">If you are using the Catalog panel in ArcMap, close arcmap, then open ArcCatalog.  In there, right click on your feature class and go to Properties.  Click on the "Fields" tab and create your new fields in there.</p>
+	 <p class="solution">If you are using the Catalog panel in ArcMap, close arcmap, then open ArcCatalog.  In there, right click on your geodatabase and create the new feature dataset or class.</p>
+	 <p class="solution">You'll then need to close ArcCatalog before re-opening ArcMap and continuing as usual.</p>
+      </section>
+
+      <section class="issue">
+	 <h3>I've created features in vector layers in the wrong area of my map.  Can I move them to the correct area?</h3>
+	 <h4>Problem</h4>
+	 <p class="problem">Features in vector layers have been created in the wrong area of the map and need to be relocated and/or resized to fit the correct base map.  This tends to happen if there has been a problem with georeferencing a field map which hasn't been picked up until the features have been created.  Once the field map is turned off or removed the features do not line up with the base map.</p>
+	 <h4>Solution</h4>
+	 <p class="solution">There are two possible solutions, but for both of them if the original problem was the georeferencing of the field slip then the first step should be to georeference again, this time checking extremely carefully.</p>
+	 <h4>Solution one</h4>
+	 <p class="solution">One possible solution is to use <strong>rubbersheeting</strong> to reshape the features.  Use the correctly georeferenced field slip to align the features as a block.</p>
+	 <p class="solution">Step-by-step <a href="http://resources.arcgis.com/en/help/main/10.1/index.html#//01m60000005m000000">instructions for rubbersheeting are available in ArcGIS Desktop help</a>.</p>
+	 <h4>Solution two</h4>
+	 <p class="solution">The second solution is to delete all features from the classes, then retrace them using the correctly georeferenced field slip.</p>
+      </section>
+
+      <h2>Questions about symbology</h2>
+      <section class="issue">
+	 <h3>Structural point symbols are not rotating correctly to the strike</h3>
+	 <h4>Problem</h4>
+	 <p class="problem">I've put strike and dip readings into the map and rotated them to the right strike, but the tick mark is in the wrong direction (eg dipping north instead of south).  For example, one of the readings is 010/18NW and the dip is to the SE instead. Would this need to be changed to 190/18? I'd always thought you were meant to take the reading below 180.</p>
+	 <!-- <img src="images/Transparency.png" alt="Each feature in a layer has different transparency" width="500" height="370"> -->
+	 <h4>Solution</h4>
+	 <p class="solution">You should indeed be recording the readings as 010/18NW, with the strike being between 0 and 180.  The problem isn't with your measurements, but with the way that Arc is able to handle them.  Follow the instructions for  <a href="http://bit.ly/1P36Ldi">plotting structural geology data in ArcGIS</a> from Otago University, which shows a solution to this, but basically you either need to add 90 or add 270 - so that you don't end up with more than 360 degrees.  You should then check the result of the rotation against the symbols on your field slip.</p>
+      </section>
+
+      <section class="issue">
+	 <h3>I'm displaying dykes on my map and need to symbolise them as red lines with a black outline which is "open" at the end.  How do I do this?</h3>
+	 <h4>Problem</h4>
+	 <p class="problem">This is almost a two-fold problem.  Firstly how do you create a line symbol with an outline, secondly, once you have, how do you make the end of the line "open"? See figure 1 for a "closed" line. Your dykes should each have been digitised as a single line, then try the solution below.</p>
+	 <h4>Solution</h4>
+	 <p class="solution">In the Symbol Selector click on <strong>Edit Symbol</strong>.  In the Preview pane you can add Layers to a symbol.  In this case you want to add two lines, so click on the plus sign.  Both lines should be set as <strong>Cartographic Line Symbol</strong>.  Line Caps should be set to <strong>Butt</strong> and Line Joins to <strong>Round</strong></p>
+	 <p class="solution">Set the colours and the widths of the lines as required: the lower line will need to be thicker than the upper one.  Then click on OK and check how it looks on your map - hopefully something like the third image below.</p>
+	 <img src="images/Dykes1.png" alt="A double-layered line, but with closed ends" width="300" />
+	 <img src="images/Dykes2.png" alt="How to set up the correct line styles" width="400" />
+	 <img src="images/Dykes3.png" alt="A double-layered line with open ends" width="300" />
+	 <p class="caption">The first image shows a double-layered line, but with closed ends.  Image two shows how to set up the symbol correctly so that the line becomes "open" - as in image three.</p>
+      </section>
+      <!--
+	 <section class="issue">
+	 <h3>How do I make the ticks on my faults line up so they don't fall in the gaps on the dashed line?</h3>
+	 <h4>Problem</h4>
+	 <p class="problem">When symbolising the inferred faults with a dashed line and a "tick" for downthrow, the ticks look odd when they fall between dashes.</p>
+	 <h4>Solution</h4>
+	 <p class="solution"></p>
+	 <p class="caption"></p>
+
+	 </section>
+      -->
+
+      <section class="issue">
+	 <h3>Transparency seems to be different for each feature in a layer, and can't be changed in the Display tab</h3>
+	 <h4>Problem</h4>
+	 <p class="problem">In the image below all of the features are on the same layer, and all should be the same colour.  Transparency appears to have been set, but the transparency option on the Display tab of the layer properties doesn't seem to make any difference.</p>
+	 <img src="images/Transparency.png" alt="Each feature in a layer has different transparency" width="500" height="370" />
+	 <h4>Solution</h4>
+	 <p class="solution">Transparency has actually been set to vary according to the value of one of the fields in the feature class. Unset the transparency by field option by going to the symbology tab of the layer properties, clicking on the <strong>Advanced</strong> button, then the <strong>Transparency</strong> option.  Now change the field dropdown so that it reads "<em>None</em>" and click <strong>OK &gt; Apply</strong>.</p>
+      </section>
+
+      <section class="issue">
+	 <h3>I've mosaiced a dtm raster, but the whole mosaic just looks black</h3>
+	 <h4>Problem</h4>
+	 <p class="problem">Multiple tiles of a raster dtm have been mosaiced.  When the mosaic is added to Arc it looks completely black.</p>
+	 <h4>Solution</h4>
+	 <p class="solution">Check the table of contents.  Do the High and Low values that are listed make sense compared to the layers that you were adding to the mosaic?  On the example below the input dtms ranged from -76 to 1335 but the output raster has a range of 0 to 65535.  If this is the case then you need to run the mosaic to new raster tool again but this time check the pixel type and depth of your original raster files before you do so (use the Layer Properties).  For example, for SRTM files the pixel setting needs to be set to <strong>16_BIT_SIGNED</strong>.  Use Catalog to check the properties for the tiles that you are using.  This setting turns out not to be optional after all despite the dialog saying that it is.</p>
+	 <img src="images/Mosaic1.png" alt="Mosaic layer and it's component layers" width="343" height="305">
+	 <img src="images/Mosaic3.png" alt="Checking the pixel type setting in the layer properties" width="450" height="390" >
+	 <img src="images/Mosaic2.png" alt="Pixel type setting - not optional after all" width="237" height="192" >
+	 <p>If this doesn't work you will also need to check the symbology of the layer.  Check that it is stretched, and that the Stretch Type is set - Maximum - Minimum is often the most effective.</p>
+      </section>
+
+	 <section class="issue">
+	    <h3>I'm using an OS VectorMap Local raster background and the colours are too dark/strong</h3>
+	    <h4>Problem</h4>
+	    <p class="problem">On OS VectorMap Local raster maps there are sometimes background colours which make it harder to see pencil notes. For example, some areas have a pale yellow background.  You may also want to remove the green of woodland, or the yellow of sand.</p>
+	    <h4>Solution</h4>
+	    <p class="solution">You need to use the Identify tool to find the colour of the area you want to change.  You can then use the list of colours in the table of contents to change individual colours.  You have to do this for each tile of data in your map.</p>
+	    <img src="images/IdentifyColour.png" alt="Using the Identify tool to find the colour to change." height="300">
+	    <img src="images/ChangeColour.png" alt="Changing the colour." height="300">
+	    <p class="caption">In the first image I've used the Identify tool to click on a green area on the map.  The popup box tells me that the colour index for this colour is 173 so that is the colour that I need to find in the Table of contents. <br />In this case I'll set the fill to "no colour" in the Symbol Selector.</p>
+	 </section>
+
+	 <section class="issue">
+	    <h3>I have raster background tiles in colour and I want to change them to greyscale.  How can I do this?</h3>
+	    <h4>Problem</h4>
+	    <p class="problem">When you need to add data on top of a base map you may well want the background to be greyscale rather than coloured.  If the only background data you can obtain is coloured try the following solution.</p>
+	    <h4>Solution</h4>
+	    <p class="solution">There are two different solutions depending on the way the raster files have been coloured.</p>
+	    <p class="solution">For Ordnance Survey tiles from Digimap, such as 1:25 000 raster, it is now possible to download greyscale themed tiles.  This is far simpler than trying to convert the tiles to greyscale.</p>
+	    <p class="solution">Otherwise you need to start by working out what sort of colour your image uses.  The images below show how the two different possibilities look in the Table of Contents.</p>
+	    <img src="images/ColourRGBImage.png" alt="Colour raster image with colour map - as it looks in the Table of Contents" height="300">
+	    <img src="images/ColourThreeBand.png" alt="Three band colour raster image as it looks in the Table of Contents" height="100">
+	    <p class="caption">The first image shows a raster image with colour map as it looks in the Table of Contents - note that each colour has a value and there are probably 255 of them. <br />The second image shows a three band colour raster image as it looks in the Table of Contents with only red, green and blue (RGB).</p>
+	    <p class="solution">If you have a raster image with a colour map, as in the first image above, then try the instructions from the <a href="https://digimap.edina.ac.uk/webhelp/digimapgis/arcgis/standard_arcgis_functions/how_to_greyscale_colour_raster.htm">Digimap Help pages</a>.</p>
+	    <p class="solution">If you have an RGB three-band raster image then the solution is as follows:</p>
+	    <ul>
+	       <li>You are usually told to add just the top level file of a three band image, so that it looks like the second image above.  This time go back to the Catalog and add each band separately so that in the Table of Contents it looks like the first figure below.</li>
+	       <li>Your image will look greyscale at this point, but to make that permanent you need to use the Raster Calculator</li>
+	       <li>Open the Toolbox (Geoprocessing - ArcToolbox) and go to Spatial Analyst Tools - Map Algebra - and double-click to open the Raster Calculator</li>
+	       <li>Use the expression builder to set up an expression that basically says</li>
+	       <ul>
+		  <li>("band 1" + "band 2" + "band 3") / 3</li>
+	       </ul>
+	       <li>Choose a location to save the output to, and give it a name</li>
+	       <li>Click on <strong>OK</strong> and the calculator should run and output a new file which it should add to your map.</li>
+	    </ul>
+	    <p class="solution">The new layer should look like the third image below when you check the Table of Contents. It is now a single band raster.</p>
+	    <img src="images/ColourThreeBandSeparate.png" alt="Three separate bands for an RGB image" height="250">
+	    <img src="images/ColourRasterCalc.png" alt="The raster calculator set up to combine the three bands into one" height="400">
+	    <img src="images/ColourThreeBandNowOne.png" alt="Three separate bands for an RGB image" height="100">
+
+	 </section>
+
+	 <section class="issue">
+	    <h3>My map has too many contours at the scale I need, for the steepness of the slopes. How can I show just a subset?</h3>
+	    <h4>Problem</h4>
+	    <p class="problem">In some areas with lots of steep slopes the contours cover the map too thickly.  For example, (first image) using OS Terrain 5 contours in a hilly area, the 5m contours hide too much of the ground, 10m contours would be sufficient.</p>
+	    <h4>Solution</h4>
+	    <p class="solution"></p>
+	    <img src="images/t5con_orig.png" alt="Terrain 5 contours showing 5m contour spacing" height="170">
+	    <img src="images/t5con_after.png" alt="Terrain 5 contours showing at 10m intervals" height="170">
+	    <p class="caption">The first image shows Terrain 5 contours at 5m intervals.  The second image shows the same Terrain 5 contour layer with a contour interval of 10m set as shown below. (&copy; Crown Copyright and Database Right 2016. Ordnance Survey (Digimap Licence))</p>
+	    <p class="solution">To display a different contour spacing try the
+	       following: Go into the layer properties, and go to the
+	       <strong>Definition Query</strong> tab.  Click on <strong>Query
+		  Builder...</strong>.  In the Query builder box type
+	       <code>MOD( "PROP_VALUE" ,10) = 0</code> (image below). Click <strong>Verify</strong> to check that you've typed in the statement correctly, then click <strong>OK</strong> and <strong>Apply</strong> to finish.</p>
+	    <p class="solution">If the contour values are not multiples of 10 you may need to round the contour values by multiplying by 10, then the value that you need also needs to be multiplied so the statement that you enter would be <code>MOD(Round("PROP_VALUE"*10),100) = 0</code>.  So '100' will show 10m contours, '1000' would show 100m contours etc. 'PROP_VALUE' is the field containing the contour values, so you may need to include a different name.</p>
+	    <img src="images/t5con_properties2.png" alt="Setting the contour interval in the layer properties" height="350">
+	    <p class="caption">Entering the definition query in the layer properties to set the contour interval to 50m.</p>
+	 </section>
+
+	 <h2>Questions about labelling</h2>
+
+	 <section class="issue">
+	    <h3>I've labelled my geological symbols but the labels are not in the right place.  How can I move them?</h3>
+	    <h4>Problem</h4>
+	    <p class="problem">The default label positions for symbols do not place the labels in the correct place on bedding, cleavage etc symbols.</p>
+	    <h4>Solution</h4>
+	    <p class="solution">Using the Maplex Label Engine it is possible to reposition the labels.  Follow the instructions on <a href="http://arcg.is/2j99wiD">labelling strike and dip in the Arc Help pages</a>.</p>
+	    <img src="images/BeddingDefault.png" alt="Default positioning of labels on geological symbols" width="189" height="208">
+	    <img src="images/BeddingUpdated.png" alt="Positioning of labels on geological symbols following the instructions" width="199" height="208" >
+	    <p class="caption">The first image shows the labels when they are first placed in default positions.<br />The second image shows the labels once the <a href="http://arcg.is/2j99wiD">instructions</a> have been followed.</p>
+	    <p class="solution">If this doesn't work, do as much as you can using the tools, but then convert the labels to annotation and, in an edit session, use the annotation tool to move the labels around.  Once you've done this you won't be able to add any further automatically, though.</p>
+	 </section>
+
+	 <section class="issue">
+	    <h3>When I convert my contour labels to annotation most of them disappear.  How can I keep them on my map?</h3>
+	    <h4>Problem</h4>
+	    <p class="problem">When you set up labels for your contours there are enough to be useful, but as soon as you convert them to annotation so that you can move them around, most of them disappear and there aren't enough left on your map.</p>
+	    <img src="images/AnnotationBefore.png" alt="Contours when labels are first set." height="290"/>
+	    <img src="images/AnnotationAfter.png" alt="Contours when the labels have been converted to annotation." height="290" />
+	    <p class="caption">The first image shows contours when labels are first set.<br />The second image shows contours when the labels have been converted to annotation and most or all of the labels have disappeared.</p>
+	    <h4>Solution</h4>
+	    <p class="solution">Set up the labels as usual using the properties dialog.  On the Placement Properties tab untick "Connect Features" and change the drop-down to "One label per feature part".  This adds more labels to the map, but then, once you convert them to annotation there should be more remaining on your map.</p>
+	    <img src="images/AnnotationFeaturesUnconnected.png" alt="Contours when Connect features has been unticked and drop-down set to One label per feature part, then converted to annotation." height="290" />
+	    <p class="caption">The result when Connect features has been unticked and drop-down set to One label per feature part, then converted to annotation.</p>
+	 </section>
+
+	 <h2>Questions about layout</h2>
+
+	 <section class="issue">
+	    <h3>I've created a base map in Arc, now how do I print out several field slips from it?</h3>
+
+	    <h4>Problem</h4>
+	    <p class="problem">You have one large map in Arc, but you need to print out A4 field slips as tiles across the whole area.  How do you make sure that you cover the whole area in layout view?</p>
+	    <h4>Solution</h4>
+	    <p class="solution">There are at least two possible solutions.  Which one you choose probably depends on how many field slips you need to print, and whether you want to be able to print the same slips again in the future.</p>
+	    <p class="solution">Both solutions begin by setting up your layout to the correct page size and adding all of the elements that you need, such as a measured grid, copyright text and a scale bar.</p>
+	    <p class="solution">The first, and probably the simplest solution, is to start at the north-west corner of your map and move the map content a page at a time using the pan tool. Export the view to a pdf each time and then print the pdfs.  To make it easier to repeat this next time don't forget to add a bookmark for each view (instructions are in the full workbook if you need a reminder).</p>
+	    <p class="solution">The second solution involves using data-driven pages in Arc to export multiple pages.  While it does take longer to set up it does give you more control, and has the added bonus of making it easy to change between landscape and portrait in the same project. You can also print an index to your map sheets.  <a href="downloads/DataDrivenPages.pdf">Instructions for data-driven pages</a> (pdf format).</p>
+	 </section>
+
+	 <section class="issue">
+	    <h3>I'm having trouble importing images from Inkscape into my map layout</h3>
+	    <h4>Problem</h4>
+	    <p class="problem">I've exported images as png files from Inkscape and I've imported them into Arc, but the background is black and I can't see the image properly.</p>
+	    <p>
+	       <img src="images/ImageBlack.png" alt="Imported png image with black background" width="500">
+	       <img src="images/ImageWhite.png" alt="Imported png image with a white background added - text is now visible" width="500">
+	    </p>
+	    <p class="caption">The png image exported from Inkscape has been imported into an ArcMap layout.  The background is now black.</p>
+	    <p class="caption">Once a white background has been added in Inkscape the exported image appears in ArcMap with no problem (the quality in this image is down to the screen shot, not how it appears in Arc!).</p>
+	    <h4>Reason</h4>
+	    <p class="reason">When an image is exported from Inkscape in png format the background is transparent by default.  This doesn't usually cause a problem, but for some reason Arc doesn't accept transparency so it makes the background black.</p>
+	    <h4>Solution</h4>
+	    <p class="solution">In Inkscape create a layer which is at the bottom of the list of layers.  On this layer draw a box covering the whole of your page and make both the fill and stroke white.  Now export your image.  The background should remain white once it is imported into Arc.</p>
+	 </section>
+
+	 <section class="issue">
+	    <h3>I'm having trouble importing CorelDraw files and/or images into my map layout</h3>
+	    <h4>Problem</h4>
+	    <p class="problem">When importing CorelDraw objects works, it looks really good.  But there are various likely problems such as only being able to see an icon; being able to see the diagram but gradients disappear, or colours change, or transparency doesn't show.</p>
+	    <!-- <img src="images/CalibriError.png" alt="Example of Calibri error when exporting from ArcMap" width="228" height="50"> -->
+	    <h4>Reason</h4>
+	    <p class="reason">The reason isn't clear - sometimes it works, sometimes it doesn't!</p>
+	    <h4>Solution</h4>
+	    <p class="solution">I've experimented with various different formats and come to the following conclusions:</p>
+	    <p class="solution">If linking the CorelDraw file as an object works, that is the best format to use.</p>
+	    <p class="solution">If it doesn't work, then export your diagram as a <strong>png</strong> file and insert that as an image.  You may find when you look at it on screen in layout view that gradients look odd, but once it is printed it seems to be OK.  But check before your final version!</p>
+	    <p class="solution">If you export your diagrams as jpg the colours tend to change.  Pdf is possible, but sizing is difficult in your layout and the final version tends to print at a different size to the size it appears on screen!</p>
+
+	 </section>
+
+	 <section class="issue">
+	    <h3>The text is garbled when I export my map as pdf</h3>
+	    <h4>Problem</h4>
+	    <p class="problem">When you have inserted a CorelDraw into your map layout as an object you find that some of the text is garbled. This can either happen in layout view as soon as you have inserted the file, or only become apparent when you export to pdf. This seems to be most likely to cause "f" to become a question mark.</p>
+	    <img src="images/CalibriError.png" alt="Example of Calibri error when exporting from ArcMap" width="228" height="50">
+	    <h4>Reason</h4>
+	    <p class="reason"> There is an issue with the way the some fonts are exported. The issue is to with ligatures between certain characters, e.g. "ti" or "fi", but once one of those ligatures has occurred, the rest of the line of text can sometimes be affected.</p>
+	    <h4>Solution</h4>
+	    <p class="solution"> Avoid using ligatured fonts! At the moment this seems to include Calibri (the default in CorelDraw), Arial and Times New Roman. Try <strong>Miriam</strong>, but you can experiment.  Calibri, Arial and Times New Roman are not the only "ligatured" fonts.</p>
+	    <p class="solution">The problem has apparently been solved in version 10.1 of Arc, but as of 2013/2014 the University is still using version 10 so it is still an issue.</p>
+	 </section>
+
+	 <section class="issue">
+	    <h3>How do I clip the map area to my mapping area?</h3>
+	    <h4>Problem</h4>
+	    <p class="problem"> You have an irregular shaped mapping area and wish to get rid of the areas outside of the geological features.</p>
+	    <img src="images/ClipBefore.png" alt="Irregular mapping area with additional map around the edges." width="378" height="339">
+	    <img src="images/ClipAfter.png" alt="Irregular mapping area after clipping" width="379" height="341" >
+	    <h4>Solution</h4>
+	    <p class="solution"> You need to "clip" your data frame. Go to the Data Frame Properties, the Data Frame tab and use the Clip Options to select the outline of your map - this should be a feature class.</p>
+	    <p class="solution">If you want to show part of the topographic map around the geology as a sort of margin, it is possible to "buffer" your outline and use the buffered version to clip.  Use Help to find instructions for this.</p>
+	    <p class="solution">Note that you don't have to do this - there is no problem with having "blank" topography around the outside of your geological features.  In fact, personally, I think it looks better with the topographic map still visible.</p>
+	 </section>
+
+
+
+
+	 <section class="menu">
+	    <p>Contact Clare at <a href="mailto:c.e.gordon@leeds.ac.uk?Subject=GIS%20FAQ%20Contact">c.e.gordon@leeds.ac.uk</a></p>
+	    <!-- <p><a href="index.html">Home page</a></p> -->
+	 </section>
+
+	 <!-- Google Analytics code for tracking -->
+	 <script type="text/javascript">
+
+	    var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-38981876-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+	 </script>
+   </body>
+</html>
