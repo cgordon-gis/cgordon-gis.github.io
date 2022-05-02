@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/filter.css">
+<link rel="stylesheet" href="css/nouislider.min.css">
+        <style>
+        #map {
+            width: 1465px;
+            height: 1773px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/tailDT.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/wNumb.js"></script>
+        <script src="data/TorridonReflections_1.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[57.197201166619585,-5.72316406324092],[57.6285886088244,-5.061483854653156]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        map.createPane('pane_OutdoorsAPI_0');
+        map.getPane('pane_OutdoorsAPI_0').style.zIndex = 400;
+        var layer_OutdoorsAPI_0 = L.tileLayer('https://tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=7b1e250b4e024390ac53f0d80f13cc89', {
+            pane: 'pane_OutdoorsAPI_0',
+            opacity: 1.0,
+            attribution: '',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 18
+        });
+        layer_OutdoorsAPI_0;
+        map.addLayer(layer_OutdoorsAPI_0);
+        function pop_TorridonReflections_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Heading'] !== null ? autolinker.link(feature.properties['Heading'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Description'] !== null ? autolinker.link(feature.properties['Description'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['PhotoLocation'] !== null ? autolinker.link(feature.properties['PhotoLocation'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['WebCategory'] !== null ? autolinker.link(feature.properties['WebCategory'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_TorridonReflections_1_0(feature) {
+            switch(String(feature.properties['q2wHide_Category'])) {
+                case 'Geology':
+                    return {
+                pane: 'pane_TorridonReflections_1',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(100,220,196,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'History and people':
+                    return {
+                pane: 'pane_TorridonReflections_1',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(224,127,58,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Views and natural features':
+                    return {
+                pane: 'pane_TorridonReflections_1',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(204,34,167,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'Wildlife':
+                    return {
+                pane: 'pane_TorridonReflections_1',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(165,235,118,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_TorridonReflections_1');
+        map.getPane('pane_TorridonReflections_1').style.zIndex = 401;
+        map.getPane('pane_TorridonReflections_1').style['mix-blend-mode'] = 'normal';
+        var layer_TorridonReflections_1 = new L.geoJson(json_TorridonReflections_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_TorridonReflections_1',
+            layerName: 'layer_TorridonReflections_1',
+            pane: 'pane_TorridonReflections_1',
+            onEachFeature: pop_TorridonReflections_1,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_TorridonReflections_1_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_TorridonReflections_1);
+        map.addLayer(layer_TorridonReflections_1);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'TorridonReflections<br /><table><tr><td style="text-align: center;"><img src="legend/TorridonReflections_1_Geology0.png" /></td><td>Geology</td></tr><tr><td style="text-align: center;"><img src="legend/TorridonReflections_1_Historyandpeople1.png" /></td><td>History and people</td></tr><tr><td style="text-align: center;"><img src="legend/TorridonReflections_1_Viewsandnaturalfeatures2.png" /></td><td>Views and natural features</td></tr><tr><td style="text-align: center;"><img src="legend/TorridonReflections_1_Wildlife3.png" /></td><td>Wildlife</td></tr></table>': layer_TorridonReflections_1,"Outdoors (API)": layer_OutdoorsAPI_0,}).addTo(map);
+        setBounds();
+        var mapDiv = document.getElementById('map');
+        var row = document.createElement('div');
+        row.className="row";
+        row.id="all";
+        row.style.height = "100%";
+        var col1 = document.createElement('div');
+        col1.className="col9";
+        col1.id = "mapWindow";
+        col1.style.height = "99%";
+        col1.style.width = "80%";
+        col1.style.display = "inline-block";
+        var col2 = document.createElement('div');
+        col2.className="col3";
+        col2.id = "menu";
+        col2.style.display = "inline-block";
+        mapDiv.parentNode.insertBefore(row, mapDiv);
+        document.getElementById("all").appendChild(col1);
+        document.getElementById("all").appendChild(col2);
+        col1.appendChild(mapDiv)
+        var Filters = {"WebCategory": "str"};
+        function filterFunc() {
+          map.eachLayer(function(lyr){
+          if ("options" in lyr && "dataVar" in lyr["options"]){
+            features = this[lyr["options"]["dataVar"]].features.slice(0);
+            try{
+              for (key in Filters){
+                keyS = key.replace(/[^a-zA-Z0-9_]/g, "")
+                if (Filters[key] == "str" || Filters[key] == "bool"){
+                  var selection = [];
+                  var options = document.getElementById("sel_" + keyS).options
+                  for (var i=0; i < options.length; i++) {
+                    if (options[i].selected) selection.push(options[i].value);
+                  }
+                    try{
+                      if (key in features[0].properties){
+                        for (i = features.length - 1;
+                          i >= 0; --i){
+                          if (selection.indexOf(
+                          features[i].properties[key])<0
+                          && selection.length>0) {
+                          features.splice(i,1);
+                          }
+                        }
+                      }
+                    } catch(err){
+                  }
+                }
+                if (Filters[key] == "int"){
+                  sliderVals =  document.getElementById(
+                    "div_" + keyS).noUiSlider.get();
+                  try{
+                    if (key in features[0].properties){
+                    for (i = features.length - 1; i >= 0; --i){
+                      if (parseInt(features[i].properties[key])
+                          < sliderVals[0]
+                          || parseInt(features[i].properties[key])
+                          > sliderVals[1]){
+                            features.splice(i,1);
+                          }
+                        }
+                      }
+                    } catch(err){
+                    }
+                  }
+                if (Filters[key] == "real"){
+                  sliderVals =  document.getElementById(
+                    "div_" + keyS).noUiSlider.get();
+                  try{
+                    if (key in features[0].properties){
+                    for (i = features.length - 1; i >= 0; --i){
+                      if (features[i].properties[key]
+                          < sliderVals[0]
+                          || features[i].properties[key]
+                          > sliderVals[1]){
+                            features.splice(i,1);
+                          }
+                        }
+                      }
+                    } catch(err){
+                    }
+                  }
+                if (Filters[key] == "date"
+                  || Filters[key] == "datetime"
+                  || Filters[key] == "time"){
+                  try{
+                    if (key in features[0].properties){
+                      HTMLkey = key.replace(/[&\/\\#,+()$~%.'":*?<>{} ]/g, '');
+                      startdate = document.getElementById("dat_" +
+                        HTMLkey + "_date1").value.replace(" ", "T");
+                      enddate = document.getElementById("dat_" +
+                        HTMLkey + "_date2").value.replace(" ", "T");
+                      for (i = features.length - 1; i >= 0; --i){
+                        if (features[i].properties[key] < startdate
+                          || features[i].properties[key] > enddate){
+                          features.splice(i,1);
+                        }
+                      }
+                    }
+                  } catch(err){
+                  }
+                }
+              }
+            } catch(err){
+            }
+          this[lyr["options"]["layerName"]].clearLayers();
+          this[lyr["options"]["layerName"]].addData(features);
+          }
+          })
+        }
+            document.getElementById("menu").appendChild(
+                document.createElement("div"));
+            var div_WebCategory = document.createElement('div');
+            div_WebCategory.id = "div_WebCategory";
+            div_WebCategory.className= "filterselect";
+            document.getElementById("menu").appendChild(div_WebCategory);
+            sel_WebCategory = document.createElement('select');
+            sel_WebCategory.multiple = true;
+            sel_WebCategory.size = 4;
+            sel_WebCategory.id = "sel_WebCategory";
+            var WebCategory_options_str = "<option value='' unselected></option>";
+            sel_WebCategory.onchange = function(){filterFunc()};
+            WebCategory_options_str  += '<option value="<strong>Category:</strong> Geology"><strong>Category:</strong> Geology</option>';
+            WebCategory_options_str  += '<option value="<strong>Category:</strong> History and people"><strong>Category:</strong> History and people</option>';
+            WebCategory_options_str  += '<option value="<strong>Category:</strong> Views and natural features"><strong>Category:</strong> Views and natural features</option>';
+            WebCategory_options_str  += '<option value="<strong>Category:</strong> Wildlife"><strong>Category:</strong> Wildlife</option>';
+            sel_WebCategory.innerHTML = WebCategory_options_str;
+            div_WebCategory.appendChild(sel_WebCategory);
+            var lab_WebCategory = document.createElement('div');
+            lab_WebCategory.innerHTML = 'WebCategory';
+            lab_WebCategory.className = 'filterlabel';
+            div_WebCategory.appendChild(lab_WebCategory);
+            var reset_WebCategory = document.createElement('div');
+            reset_WebCategory.innerHTML = 'clear filter';
+            reset_WebCategory.className = 'filterlabel';
+            reset_WebCategory.onclick = function() {
+                var options = document.getElementById("sel_WebCategory").options;
+                for (var i=0; i < options.length; i++) {
+                    options[i].selected = false;
+                }
+                filterFunc();
+            };
+            div_WebCategory.appendChild(reset_WebCategory);
+        </script>
+    </body>
+</html>
