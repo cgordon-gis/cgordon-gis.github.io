@@ -40,6 +40,16 @@
 		os.environ["PROJ_LIB"]="/Applications/QGIS.app/Contents/Resources/proj"
 	    </pre>
 </section>
+	    
+<section class="issue">
+    <h3>I can't run the Fix Geometries tool successfully.  I'm using a Mac.</h3>
+
+    <h4>Problem</h4>
+    <p class="problem">Sometimes you need to run the Fix Geometries tool before being able to use some selection or extraction tools, such as Intersect, Select by Location or Extract by Location.  Unfortunately, on a Mac, this is causing an error and not running.</p>
+    <h4>Solution</h4>
+    <p class="solution">Unfortunately this seems to be a problem with Mac not having an updated QGIS package.  There doesn't seem to be a solution at the moment (March 2023), but we'll keep an eye on the <a href="https://github.com/qgis/QGIS/issues/50888">Github page about the error</a>.</p>
+	<p>Until a solution becomes available, all I can suggest is that you try the selection/intersection/extraction tool without using fix geometries.  Sometimes this will work.  If you get an error telling you that you need to fix geometries, then I'm afraid the only solution I can suggest for now is to log on to a Windows computer in a cluster to run this part of the processing.</p>
+</section>
 
 <section class="issue">
     <h3>My panels have disappeared in QGIS</h3>
