@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portfolios on Clare&#39;s GIS Portfolio</title>
+    <link>https://cgordon-gis.github.io/portfolio/portfolio/</link>
+    <description>Recent content in Portfolios on Clare&#39;s GIS Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 30 Nov 2023 20:19:22 +0530</lastBuildDate><atom:link href="https://cgordon-gis.github.io/portfolio/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My favourite...</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/40_myfavourite/</link>
+      <pubDate>Thu, 30 Nov 2023 20:19:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/40_myfavourite/</guid>
+      <description>Woodbatch walk Data LIDAR Composite DSM last return - 2m resolution, 2022. Downloaded from: DEFRA Data Services Platform. https://www.environment.data.gov.uk/ More information at: https://experience.arcgis.com/experience/753ad2ebd3554fa696885b8c366c3049
+Copyright: Open Government Licence
+Tools used Relief Visualisation Toolbox QGIS Inkscape What did I learn? I put quite a few techniques into this layout and did some experimentation of ways to do different things.
+I tried a plain hillshade first, but it felt a bit boring. Then I remembered the RVT tool I used to do a multidirectional hillshade of Bury Ditches.</description>
+    </item>
+    
+    <item>
+      <title>Population</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/12_population2/</link>
+      <pubDate>Wed, 29 Nov 2023 18:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/12_population2/</guid>
+      <description>Shropshire population from the 2021 census Data Census data downloaded from: Parish Profiles page. Using Total field from Method of travel to work tables. Boundary Data from Parishes and Non-civil Parished Areas December 2021. Tools Excel QGIS What have I learnt? Useful opportunity to explore 2021 census data. Explored ways of displaying the data, such as pie charts for each parish. That didn&amp;rsquo;t really work because there were too many variables, and the parishes are fairly small.</description>
+    </item>
+    
+    <item>
+      <title>Dot</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/62_dot/</link>
+      <pubDate>Mon, 27 Nov 2023 19:09:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/62_dot/</guid>
+      <description>Elevation of Shropshire with dots Data Heights taken from SRTM 1-arc second global data downloaded from Earth Explorer clipped to the Shropshire border. Shropshire boundary taken from ONS Open Geography Portal. Tools used QGIS What did I learn? How to generate random dots within a polygon in QGIS. How to extract an attribute from a raster layer and add it to the random dots. What would I do differently or want to find out?</description>
+    </item>
+    
+    <item>
+      <title>Minimal</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/38_minimal/</link>
+      <pubDate>Sun, 26 Nov 2023 12:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/38_minimal/</guid>
+      <description>Minimal map of Bishop&amp;rsquo;s Castle My initial ideas included maps of just contours or just rivers, but once I&amp;rsquo;d seen the tutorial by Rick Johanson on YouTube that seemed a fun thing to try.
+Inspiration from Rick Johanson YouTuble tutorial. Custom stylized maps with free OSM data.
+Comparison of Bishop&amp;rsquo;s Castle in 1903 and 2023 November Map Challenge version. More minimal than the April version.
+Looked at OS 25 inch map from 1903 via the National Library of Scotland map viewer to check which roads were there in 1903.</description>
+    </item>
+    
+    <item>
+      <title>Black and white</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/60_blackandwhite/</link>
+      <pubDate>Fri, 24 Nov 2023 21:08:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/60_blackandwhite/</guid>
+      <description>The Long Mynd The hillshade background shows the shape of the plateau incised by deep valleys, locally known as Batches. The bedrock is Precambrian - some of the oldest in Britain. Signs of human presence go back to the Ice Age. I&amp;rsquo;ve lived away from Shropshire for over 30 years, but the sight of The Long Mynd from the west still means &amp;ldquo;home&amp;rdquo; to me.
+Data LIDAR Composite DTM 2m resolution, 2022.</description>
+    </item>
+    
+    <item>
+      <title>Raster</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/10_raster2/</link>
+      <pubDate>Tue, 21 Nov 2023 19:45:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/10_raster2/</guid>
+      <description>Bathymetry of the Sound of Raasay and the Inner Sound Playing with height data again. Always fun and interesting! This time combining elevation and bathymetry.
+Data Bathymetry data downloaded from: https://www.emodnet-bathymetry.eu/ SRTM data downloaded via SRTM Download plugin in QGIS Tools QGIS for data handling and setting up the layout. Inkscape for labelling. What would I like to change? Would like to try doing this as a plot using R. Thought about it this time, but it would have taken too long.</description>
+    </item>
+    
+    <item>
+      <title>Outdoors</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/58_outdoors/</link>
+      <pubDate>Mon, 20 Nov 2023 19:45:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/58_outdoors/</guid>
+      <description>Hills around Loch Torridon, Highlands of Scotland Data Background mapping - places, water, roads etc, from OpenStreetMap. Elevation is SRTM data from NASA downloaded via SRTM downloader plugin in QGIS. Tools All done in QGIS. What would I like to change? Originally intended to do a map fo the coire of Beinn Alligin with photos and highlights from our explorations. Was taking far too long to set it up, so I used the background data and elevation to produce a quick map of the hills.</description>
+    </item>
+    
+    <item>
+      <title>5 minute map</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/36_5minute/</link>
+      <pubDate>Sun, 19 Nov 2023 19:45:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/36_5minute/</guid>
+      <description>What grew where on our allotment in 2023 Suggested by my husband, and useful for future planning.
+Data Our own Tools Inkscape What did I learn? That it is possible to use emojis as symbols in text in Inkscape (e.g. the clubs symbol next to rue). That making a map in 5 minutes is difficult!!! What would I do differently or would like to change? Would like to spend more time on this, e.</description>
+    </item>
+    
+    <item>
+      <title>Flow</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/56_flow/</link>
+      <pubDate>Thu, 16 Nov 2023 19:45:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/56_flow/</guid>
+      <description>Flow of Northern Gannets foraging from Alderney Creating an animated gif from multiple frames.
+Data Alderney Gannets tracking data from Movebank. Tools Generated maps of route with Time Manager in QGIS. QGIS tutorials - Animating Time Series Data Used GIMP to create an animated GIF. What did I learn? Setting up the Temporal Controller in QGIS. Exporting frames with the Temporal Controller. More practice on how to create an animated gif in GIMP!</description>
+    </item>
+    
+    <item>
+      <title>OpenStreetMap</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/05_osmshropsaonb/</link>
+      <pubDate>Wed, 15 Nov 2023 19:45:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/05_osmshropsaonb/</guid>
+      <description>The Shropshire Hills Area of Outstanding Natural Beauty (AONB) Playing with data and plotting in R again. Took ages, but I learnt a lot!
+Data OpenStreetMap via osmdata package in R. downloaded Shropshire Hills AONB boundary Peaks within the bounding box Places - towns only. Tools R with osmdata and ggplot2 packages. What did I learn? How to combine multiple layers in a plot How to create a key for at least some of those layers - tried manual as well as auto.</description>
+    </item>
+    
+    <item>
+      <title>Europe</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/54_europe/</link>
+      <pubDate>Tue, 14 Nov 2023 19:45:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/54_europe/</guid>
+      <description>Population of Europe by country Attempting to use R to create a map for the first time.
+Data Natural Earth data via rnaturalearth package. Tools R / RStudio What have I learnt? A lot! Data in R, how to subset (i.e. extract what I want!), how to plot with ggplot. Lots of sources of really useful help and clear instructions for plotting in R. I will try to list those here.</description>
+    </item>
+    
+    <item>
+      <title>Choropleth</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/26_choropleth2/</link>
+      <pubDate>Mon, 13 Nov 2023 21:09:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/26_choropleth2/</guid>
+      <description>Ancient monuments per Civil Parish in Shropshire. Data Ancient monuments downloaded as kml from Megalithic Portal. Civil Parish and Non-civil Parished Areas downloaded from ONS Open Geography Portal. Tools QGIS Process Downloaded data and added to QGIS. Extracted Civil Parishes for Shropshire using Select Within plugin in QGIS and Shropshire boundary. Count points in polygon tool from QGIS toolbox to count numbers of monuments in each civil parish. Styled as Graduated colours using Greys colour ramp.</description>
+    </item>
+    
+    <item>
+      <title>South America</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/53_south_america/</link>
+      <pubDate>Sun, 12 Nov 2023 17:11:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/53_south_america/</guid>
+      <description>Observations of glass frogs of Central and South America: Hyalinobatrachium Data Downloaded from AmphibiaWeb. Photos from Wikimedia Commons Tools QGIS. Process Data was provided as tab-separated text, which needed a bit of cleaning up before importing in QGIS. Once I&amp;rsquo;d decided what data to use, it was mainly a question of creating the layout. Green and yellow for frogs! What would I like to do differently? I didn&amp;rsquo;t want to spend too much time looking for data, so ended up just going with one genus of frog - Hyalinobatrachium.</description>
+    </item>
+    
+    <item>
+      <title>Retro</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/52_retro/</link>
+      <pubDate>Fri, 10 Nov 2023 17:11:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/52_retro/</guid>
+      <description>Bishop&amp;rsquo;s Castle Pubs Data OpenStreetMap via QuickOSM plugin - buildings, historic and highways Font: BellTopo Sans from Sarah Bell (add link) Tools QGIS Process Download OSM layers. Extract current pubs from buildings label as a new layer. Labelled current and historic pubs. Fiddled around endlessly with styles in an attempt to get the map looking retro! Added a background via Project &amp;gt; Properties and chose turquoise/blue. What would I change or would like to improve?</description>
+    </item>
+    
+    <item>
+      <title>Hexagons</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/04_hexagons2/</link>
+      <pubDate>Thu, 09 Nov 2023 17:11:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/04_hexagons2/</guid>
+      <description>Shropshire Population Density Data Kontur population data. &amp;ldquo;United Kingdom population density for 400m H3 hexagons.
+Built from Kontur Population: Global Population Density for 400m H3 Hexagons Vector H3 hexagons with population counts at 400m resolution.
+Tools QGIS. Short of time, and unfortunately didn&amp;rsquo;t make notes of how I produced this map!</description>
+    </item>
+    
+    <item>
+      <title>Africa</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/50_africa/</link>
+      <pubDate>Wed, 08 Nov 2023 18:11:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/50_africa/</guid>
+      <description>Monthly precipitation in Africa Exploring Worldclim data further.
+Data Downloaded historic precipitation data from https://worldclim.org/data/worldclim21.html
+Units are mm. A raster layer for each month. Aggregated data for 1970 to 2000.
+Data described in:
+Fick, S.E. and R.J. Hijmans, 2017. WorldClim 2: new 1km spatial resolution climate surfaces for global land areas. International Journal of Climatology 37 (12): 4302-4315.
+Information about Bioclimatic variables
+Tools QGIS. GIMP image editing software. Process To prepare data:</description>
+    </item>
+    
+    <item>
+      <title>Navigation</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/49_navigation/</link>
+      <pubDate>Tue, 07 Nov 2023 18:11:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/49_navigation/</guid>
+      <description>Kerry Ridgeway Drovers&amp;rsquo; Route Data This is a map I&amp;rsquo;ve been thinking about making for a long time and it&amp;rsquo;s good to get on and do it.
+Based on information in
+Smith, W. 2013. The drovers&amp;rsquo; roads of the Middle Marches. Little Logaston, Woonton Almeley, Herefordshire: Logaston Press.
+and The Kerry Ridgeway on the Local Drove Roads website.
+Kerry Ridgeway.gpx downloaded from http://www.gps-routes.co.uk/routes/home.nsf/RoutesLinksCycle/kerry-ridgeway-walking-and-cycle-route Tools QGIS Inkscape Process Added data. Used Smith, W.</description>
+    </item>
+    
+    <item>
+      <title>Asia</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/48_asia/</link>
+      <pubDate>Mon, 06 Nov 2023 12:31:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/48_asia/</guid>
+      <description>Asia Mean Annual Temperature 1970-2000 Data Continent polygons Worldclim Bioclimatic Variables Information about Bioclimatic variables
+Citation: Fick, S.E. and Hijmans, R.J. 2017. WorldClim 2: new 1-km spatial resolution climate surfaces for global land areas. International Journal of Climatology. 37(12), pp.4302–4315.
+Tools QGIS Process Add data to map. Select only polygon(s) for Asia and export to new layer. Use Raster &amp;gt; Extraction &amp;gt; Clip raster by mask layer, with the Asia polygon as the mask, to clip the temperature raster.</description>
+    </item>
+    
+    <item>
+      <title>Lines 3</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/02_lines3/</link>
+      <pubDate>Thu, 02 Nov 2023 17:31:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/02_lines3/</guid>
+      <description>Tanaka contours for The Long Mynd, Shropshire Inspiration and instructions from: Landscape Archaeology
+Data SRTM data downloaded from EarthExplorer. Shropshire, Telford and Wrekin boundary (combined) from ONS Boundary Data (Contains public sector information licensed under the Open Government Licence v3.0.) Tools used QGIS. QGIS Hub plugin What did I learn? Using QGIS Hub plugin - where to find the style! Was somehow expecting style to do the full colours, but then realised need to style the SRTM data underneath the contours.</description>
+    </item>
+    
+    <item>
+      <title>Points 2</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/01_points2/</link>
+      <pubDate>Wed, 01 Nov 2023 19:23:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/01_points2/</guid>
+      <description>Castle names of Shropshire 1st November 2023
+Not the prettiest map I&amp;rsquo;ve ever made, but I wanted to see how many names contained &amp;ldquo;castle&amp;rdquo; in Shropshire.
+Posted for #30DayMapChallenge - Day one on Mastodon.social.
+Data Points for extent of Shropshire downloaded from OpenStreetMap via QuickOSM plugin in QGIS. Tools used QGIS with QuickOSM plugin. SQL queries within QGIS. What did I learn? A couple of ways to use SQL queries to select data in QGIS - Database manager and Execute SQL.</description>
+    </item>
+    
+    <item>
+      <title>Choropleth</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/26_choropleth/</link>
+      <pubDate>Mon, 24 Oct 2022 19:34:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/26_choropleth/</guid>
+      <description>Scrabble scores for Parishes and Non-Civil Parished Areas in Shropshire Inspiration came from @dgplacenames on Twitter.
+Data I used Parishes and Non Civil Parished Areas from the Office of National Statistics Tools I used Python, particularly Pandas, to generate the scrabble scores for each parish name. QGIS to create the layout. What did I learn? That there are fewer &amp;ldquo;l&amp;quot;s in choropleth than I thought! More about tidying up data to use in pandas!</description>
+    </item>
+    
+    <item>
+      <title>Blue</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/08_blue/</link>
+      <pubDate>Tue, 04 Oct 2022 11:34:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/08_blue/</guid>
+      <description>Once I&amp;rsquo;d discovered the UKHO site with lots of detailed bathymetry for the UK, it seemed obvious to produce a map of Loch Torridon. In the end, it worked best to concentrate on one part of the Loch.
+Bathymetry of the Loch Torridon Narrows Data I used 2m, 4m and 8m resolution bathymetry of Loch Torridon from UKHO Seabed Mapping Service Ordnance Survey OpenZoomstack data with OS stylesheets. Tools I used GDAL to convert .</description>
+    </item>
+    
+    <item>
+      <title>Elevation</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/21_elevation/</link>
+      <pubDate>Sat, 01 Oct 2022 11:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/21_elevation/</guid>
+      <description>RGB hillshade with Relief Visualisation Toolbox The idea for this map came from a blog about long barrows by the Avon Valley Archaeological Society.
+Bury Ditches Hillfort, South Shropshire.
+Data Data is 1m Lidar DTM from Defra download page. Data acknowledgement for Lidar data - Contains public sector information licensed under the Open Government Licence v3.0. Tools I used QGIS to merge lidar data then clip to required area. Relief Visualisation Toolbox which I&amp;rsquo;d not used before.</description>
+    </item>
+    
+    <item>
+      <title>Raster</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/10_raster/</link>
+      <pubDate>Sun, 21 Aug 2022 12:18:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/10_raster/</guid>
+      <description>These maps are based on a tutorial on terraforming Mars with python.
+Terraforming Mars Tools I used Python What did I learn? I tried using Venus instead, but areas with no data made it look ugly. Learnt about custom colour ramps in python and using two colour ramps on the same map. Fun to look at the surface of Mars as well. </description>
+    </item>
+    
+    <item>
+      <title>Metamapping</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/30_metamapping/</link>
+      <pubDate>Mon, 25 Jul 2022 16:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/30_metamapping/</guid>
+      <description>The brief for this day was to &amp;ldquo;write about what you&amp;rsquo;ve done with the other maps, or document or collect together in some way.&amp;rdquo;
+I decided to set up an online portfolio using the Hugo static site generator.
+To make this possible, I challenged myself to use entirely open or creative commons data so that I could share the end results, and tried to ensure that I acknowledged all data I used.</description>
+    </item>
+    
+    <item>
+      <title>Mapping 3D</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/11_3d/</link>
+      <pubDate>Sun, 24 Jul 2022 16:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/11_3d/</guid>
+      <description>Intervisibility between hillforts in South-west Shropshire Tools I used Made in QGIS DTM data preparation done with GDAL at command line. Data Original hillfort kml download from Megalithic Portal search. Had to inspect data and move some hillfort points to highest point of hillfort according to the Lidar data. Is there a way of doing this automatically?
+Height data is merged from 2 m lidar with OS Open data Terrain 50 to fill the gaps.</description>
+    </item>
+    
+    <item>
+      <title>Data challenge: Natural Earth data</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/13_naturalearth/</link>
+      <pubDate>Fri, 24 Jun 2022 17:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/13_naturalearth/</guid>
+      <description>Marine Protection Areas of the North Atlantic Data Natural Earth Data used via Cartopy. Marine Protected Areas data from Protected Planet. Tools I used QGIS to merge shapefiles Python with cartopy package for main processing Inkscape for layout What did I learn? Using cartopy package in python to provide a Natural Earth background for data in a GeoPandas geodataframe. Tried out both raster and vector backgrounds. Useful to discover data available at Protected Planet.</description>
+    </item>
+    
+    <item>
+      <title>Movement</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/20_movement/</link>
+      <pubDate>Wed, 22 Jun 2022 18:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/20_movement/</guid>
+      <description>Animation of our walk from Torridon House to Strathcarron Background map © OpenStreetMap Contributors 2022.
+Used converted gpx track of a walk we did from Torridon House to Strathcarron Hotel via An Ruadh-stac in 2017.
+Tools I used Generated maps of route with MMQGIS plugin in QGIS Used GIMP to create an animated GIF. What did I learn? Exporting frames with MMQGIS. How to create an animated gif in GIMP! How to keep file sizes right down with page size and resolution.</description>
+    </item>
+    
+    <item>
+      <title>Data challenge 3: GHSL</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/23_ghsl/</link>
+      <pubDate>Wed, 15 Jun 2022 14:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/23_ghsl/</guid>
+      <description>GHSL = Global Human Settlement Layer
+The page also provides information about the tools provided, including a tool for coordinate conversion of population grids.
+Inspiration from:
+3D spikes for population data - tutorial from Alastair Rae. Population density of Britain and Ireland Data Global Human Settlement Layer Tools I used QGIS AerialOD Inkscape for final layout (adding text) What did I learn? Useful gridded population data for recommendation to students in future.</description>
+    </item>
+    
+    <item>
+      <title>Interactive map</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/25_interactive/</link>
+      <pubDate>Tue, 31 May 2022 18:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/25_interactive/</guid>
+      <description>Torridonian Reflections web map The photographs that pop up on this web map are taken from the exhibition we put on at University of Leeds in 2014.
+Interactive Torridonian Reflections map. Tools I used Made with qgis2web plugin in QGIS. What did I learn? Hiding fields in layer properties. Changing contents of fields to html with field calculator. The developer of Leaflet js is Ukrainian What do I want to change?</description>
+    </item>
+    
+    <item>
+      <title>Elevation</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/21_elevation2/</link>
+      <pubDate>Tue, 31 May 2022 17:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/21_elevation2/</guid>
+      <description>Heights of British and Irish Hills Data Database of British and Irish Hills. Tools I used Python QGIS Inkscape What did I learn? Plotly in both QGIS and python! Used the python version to export to svg in the end. Symbol levels in QGIS. Sometimes it&amp;rsquo;s easier or better to finish off a layout in Inkscape. What do I want to change? I&amp;rsquo;m not happy with the size of the points on the map or the key.</description>
+    </item>
+    
+    <item>
+      <title>Lines</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/02_lines/</link>
+      <pubDate>Sun, 29 May 2022 18:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/02_lines/</guid>
+      <description>My thoughts for the theme of lines turned towards routes, e.g. railways. In the end I went for a route from one of our extremely enjoyable walks in the Highlands around Torridon.
+3D line with labels Inspiration taken from 3D line for a route.
+Data SRTM for height data A walking or cycling route converted from gpx to gpkg layer Tools I used QGIS with QGIS2threejs extension What did I learn?</description>
+    </item>
+    
+    <item>
+      <title>Island(s)</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/19_islands/</link>
+      <pubDate>Fri, 20 May 2022 17:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/19_islands/</guid>
+      <description>Flat Holm and Steep Holm Flat Holm and Steep Holm are islands in the Bristol Channel visible from Weston-Super-Mare. I spent many happy holidays in Weston-Super-Mare staying with my grandparents.
+The maps are inspired by the style of Hamish Haswell-Smith in his Scottish Islands book.
+Contains OS data © Crown Copyright and database right 2022.
+Also contains OpenStreetMap data © OpenStreetMap Contributors, 2022.
+Data OS Open Zoomstack for contours and waterline layers.</description>
+    </item>
+    
+    <item>
+      <title>Lines 2</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/02_lines2/</link>
+      <pubDate>Wed, 18 May 2022 18:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/02_lines2/</guid>
+      <description>I originally started this map under the heading of points, but once I&amp;rsquo;d worked out the best method it ended up using lines instead.
+Locating a relocated mile post The photograph on the map layout shows a mile post now on display in a garden in Bishop&amp;rsquo;s Castle, which Mum and I visited on a Gardens Open Day. My challenge to myself was to work out where the mile post was originally located, based solely on the information it showed.</description>
+    </item>
+    
+    <item>
+      <title>Historical</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/24_historical/</link>
+      <pubDate>Mon, 16 May 2022 17:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/24_historical/</guid>
+      <description>I still have some ideas I&amp;rsquo;d like to try out under this heading:
+Map the Roads from the Isles from the D.D.C. Pochin Mould book. Maybe on an historic map background. Or map shielings or illicit stills in Torridon? Can get Canmore data from Historic Environment Scotland. Bishop&amp;rsquo;s Castle Railway Partly inspired by old geological maps which have comments around the outside of the geology. For example, the 1893 map of Gairloch which can be seen in the BGS Maps Portal.</description>
+    </item>
+    
+    <item>
+      <title>Population</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/12_population/</link>
+      <pubDate>Sat, 30 Apr 2022 18:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/12_population/</guid>
+      <description>For this map I followed a Dynamic infographic map tutorial.
+Estimated population of England by Region, mid-2021 Data From Office for National Statistics. Tools I used QGIS What did I learn? Using population data to show how to set colours in map and charts using variables. Worked out how to find a colour palette which should be &amp;ldquo;safe&amp;rdquo; colours. What do I want to change? Could do with sorting out fonts and text sizes.</description>
+    </item>
+    
+    <item>
+      <title>Hexagons</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/04_hexagons/</link>
+      <pubDate>Thu, 28 Apr 2022 18:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/04_hexagons/</guid>
+      <description>For more information on using hexagons I want to read this article on Hexagons for location intelligence.
+Species diversity reports from Shropshire Data Data from NBN Atlas - downloaded data for flowering plants in Shropshire, Telford and The Wrekin then extracted particular species. Photo is a field maple in a hedgerow at The Wintles, Bishop&amp;rsquo;s Castle, April 2022. NBN Atlas occurrence download at NBN Atlas accessed on Thu Mar 17 14:57:02 UTC 2022.</description>
+    </item>
+    
+    <item>
+      <title>Monochrome</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/09_monochrome/</link>
+      <pubDate>Fri, 22 Apr 2022 19:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/09_monochrome/</guid>
+      <description>The inspiration for this map came from a tutorial on mapping with hachures by Robin Hawkes.
+Hachures map of Bishop&amp;rsquo;s Castle area, South Shropshire Tools I used QGIS What did I learn? Using geometry generators to create hachures. Created visual model in qgis for the process, and discovered how to apply a style file (.qml) as part of the model. That it&amp;rsquo;s &amp;ldquo;hachures&amp;rdquo; not &amp;ldquo;hatchures&amp;rdquo;! </description>
+    </item>
+    
+    <item>
+      <title>The Earth is not flat</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/28_earthnotflat2/</link>
+      <pubDate>Tue, 19 Apr 2022 18:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/28_earthnotflat2/</guid>
+      <description>Joyplots are nicknamed as such after an album cover by the band, Joy Division. The more official name is ridge-line plots.
+Cwm Mawr Dingle and The Novers joyplot with D.E.M. Slicer Joy plot of an area near Bishop&amp;rsquo;s Castle in South-west Shropshire.
+Data 1 m DTM Lidar downloaded from Defra Survey Data Download. Tools I used QGIS with the D.E.M. Slicer plugin. What did I learn? How to use the plugin.</description>
+    </item>
+    
+    <item>
+      <title>Data challenge: OpenStreetMap</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/05_openstreetmap/</link>
+      <pubDate>Sat, 16 Apr 2022 15:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/05_openstreetmap/</guid>
+      <description>Looking at OpenStreetMap data for Shropshire I realised there was a lot of landuse mapped in the South West of the county, around Bishop&amp;rsquo;s Castle and Clun Forest. So I started thinking what I could do with that.
+The multipolygon layers also contained administrative boundaries, e.g. with admin_level = 10. Apparently those are civil parishes.
+So I decided to compare the ratio of woodland/forest to area in a selection of parishes.</description>
+    </item>
+    
+    <item>
+      <title>Urban/Rural</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/16_urban_rural/</link>
+      <pubDate>Tue, 12 Apr 2022 18:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/16_urban_rural/</guid>
+      <description>People living in single person households in Shropshire and Telford and Wrekin Tools I used QGIS What did I learn? A chance to explore a new dataset - NOMIS - rural and urban classification. Doesn&amp;rsquo;t work as a bivariate choropleth because areas are either rural or urban, not a combination. What do I want to change? Try with a different data variable? </description>
+    </item>
+    
+    <item>
+      <title>Points</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/01_points/</link>
+      <pubDate>Mon, 11 Apr 2022 18:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/01_points/</guid>
+      <description>Firefly cartography April 2022
+Points glowing against a dark background.
+Data Cities data from Natural Earth Data. (Which dataset?) Tools used QGIS What did I learn? The effectiveness of draw effects in QGIS. Firefly cartography! How to create firefly cartography with QGIS Process Data Natural Earth data 1:10m Populated places 1:10m Countries Preparing data Set project background to black - Project &amp;gt; Properties &amp;gt; General &amp;gt; Background color. Countries = dark grey fill with black outlines.</description>
+    </item>
+    
+    <item>
+      <title>Boundaries</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/22_boundaries/</link>
+      <pubDate>Fri, 08 Apr 2022 17:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/22_boundaries/</guid>
+      <description>My personal bounding box That is, the boundary surrounding places I have visited.
+Data Natural Earth Data OpenStreetMap data Tools I used QGIS with Globe Builder plugin which became available as of January 2022. What did I learn? Some of this was on first attempt before the Globe Builder plugin became available:
+How to set up a globe to use as a location map. Custom projections in QGIS. What do I want to change?</description>
+    </item>
+    
+    <item>
+      <title>Map with a new tool</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/14_new_tool/</link>
+      <pubDate>Fri, 18 Mar 2022 14:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/14_new_tool/</guid>
+      <description>Whitebox Tools: The catchment of the River Kemp, South Shropshire Tools I used Whitebox Tools QGIS What did I learn? I used Whitebox Tools via the python whitebox tools runner interface to generate watershed and hypsometric tinting. This is my new tool. Whitebox Tools has very limited support for coordinate reference systems at the moment. Using shapeburst styled polygons to highlight watershed in a QGIS layout (from van der Kwast hydrology book).</description>
+    </item>
+    
+    <item>
+      <title>The Earth is not flat</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/28_earthnotflat/</link>
+      <pubDate>Sat, 12 Mar 2022 18:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/28_earthnotflat/</guid>
+      <description>Joyplots are nicknamed as such after an album cover by the band, Joy Division. The more official name is ridge-line plots.
+Beinn Alligin joyplot Elevation drawn as vector lines
+Data SRTM data downloaded via Earth Explorer Tools I used QGIS with instructions from Drawing elevation as vector lines What did I learn? Using vector lines to show terrain. What do I want to change? Would like to try with more detailed data.</description>
+    </item>
+    
+    <item>
+      <title>Map made without using a computer</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/15_without_computer/</link>
+      <pubDate>Fri, 31 May 1991 14:25:22 +0530</pubDate>
+      
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/15_without_computer/</guid>
+      <description>There are lots of possibilities for this, and I do want to try and do something new at some point. Embroidery? Crochet? Buttons?
+Cross stitch map of Shropshire Design by Heritage Crafts. This is a bit of a cheat because I stitched it back in 1991. </description>
+    </item>
+    
+  </channel>
+</rss>
