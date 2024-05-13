@@ -25,7 +25,7 @@
 	    <p class="problem">When you try to run the Assign Projection or Warp tools in QGIS, you get an error which says "ERROR 1: PROJ: proj_create_from_database: Cannot find proj.db".  The tool doesn't correctly reproject your layer.</p>
 	    <h4>Solution</h4>
 	    <p class="solution">This seems to be a problem with particular versions of QGIS on a Mac.  There is a <a href="https://github.com/qgis/QGIS/issues/39801">page about the proj.db problem</a> on the web.</p>
-	    <p>The possible solutions appear to be:</p>
+	    <p class="solution">The possible solutions appear to be:</p>
 	    <ul>
 		<li>Install a version of QGIS newer than 3.26.  So as of February 2023 try installing version 3.28.</li>
 		<li>Or use the Python console to link to proj.db by:</li>
@@ -43,12 +43,11 @@
 	    
 <section class="issue">
     <h3>I can't run the Fix Geometries tool successfully.  I'm using a Mac.</h3>
-
     <h4>Problem</h4>
     <p class="problem">Sometimes you need to run the Fix Geometries tool before being able to use some selection or extraction tools, such as Intersect, Select by Location or Extract by Location.  Unfortunately, on a Mac, this is causing an error and not running.</p>
     <h4>Solution</h4>
     <p class="solution">Unfortunately this seems to be a problem with Mac not having an updated QGIS package.  There doesn't seem to be a solution at the moment (March 2023), but we'll keep an eye on the <a href="https://github.com/qgis/QGIS/issues/50888">Github page about the error</a>.</p>
-	<p>Until a solution becomes available, all I can suggest is that you try the selection/intersection/extraction tool without using fix geometries.  Sometimes this will work.  If you get an error telling you that you need to fix geometries, then I'm afraid the only solution I can suggest for now is to log on to a Windows computer in a cluster to run this part of the processing.</p>
+	<p class="solution">Until a solution becomes available, all I can suggest is that you try the selection/intersection/extraction tool without using fix geometries.  Sometimes this will work.  If you get an error telling you that you need to fix geometries, then I'm afraid the only solution I can suggest for now is to log on to a Windows computer in a cluster to run this part of the processing.</p>
 </section>
 
 <section class="issue">
@@ -58,8 +57,8 @@
     <p class="problem">You've been using QGIS, and have managed to close one of the panels, such as the Browser or Layers panel.  How do you get these back again?</p>
     <h4>Solution</h4>
     <p class="solution">It's very easy to close panels by mistake, and once you know how, it's also very easy to get them back.</p>
-    <p>Go to <strong>View > Panels</strong> on the menu bar and put a tick in the box next to the panel(s) that is missing.  It should reappear.</p>
-    <p>A similar thing works for toolbars too.  Go to <strong>View > Toolbars</strong> on the menu and click the correct box.</p>
+    <p class="solution">Go to <strong>View > Panels</strong> on the menu bar and put a tick in the box next to the panel(s) that is missing.  It should reappear.</p>
+    <p class="solution">A similar thing works for toolbars too.  Go to <strong>View > Toolbars</strong> on the menu and click the correct box.</p>
 </section>
 
 <section class="issue">
@@ -83,6 +82,16 @@
 	<li>On a <strong>Windows desktop</strong>, make sure you're in the text properties box, not on the layout itself, then with the number lock on, hold down the <strong>Alt</strong> key, and type <strong>0169</strong> on the number pad.</li>
 	<li>If you are on a Windows laptop and don't have a number pad, type <strong>[%char(169)%]</strong> into the text properties box instead.</li>
     </ul>
+</section>
+
+<section class="issue">
+    <h3>Some processing tools are failing with an error if I try to save the output to a temporary layer.</h3>
+    <h4>Problem</h4>
+    <p class="problem">When running a processing tool in QGIS and generating a temporary layer as output, the tool fails with an error and doesn't generate the output layer(s). The error message says something about a particular file not being specified. If you run the same tool with exactly the same parameters, but save the output to a file, it works with no problem.</p>
+    <p class="problem">You can get around this easily when running individual tools, just by saving the output to file, but if building a graphic model it isn't possible to use the output of one algorithm as the input to another.</p>
+    <h4>Solution</h4>
+    <p class="solution">The solution appears to be to <a href="https://github.com/qgis/QGIS/issues/54375#issuecomment-1694342897">change the default output extension in the QGIS options</a> as this may be set to a format such as xtf.</p>
+    <p class="solution">In QGIS, go to <strong>Settings > Options</strong>. Look for the <strong>Processing</strong> tab and click on the <strong>General</strong> subheading at the top of that page. Next to <strong>Default output vector layer extension</strong> type <strong>gpkg</strong>. It's also worth checking the default output raster layer extension is set to <strong>tif</strong>.</p>
 </section>
 
 <section class="issue">
