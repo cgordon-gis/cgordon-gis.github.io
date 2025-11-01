@@ -27,8 +27,6 @@
 <link href="https://cgordon-gis.github.io/portfolio/css/custom.css" rel="stylesheet">
 <link rel="shortcut icon" href="https://cgordon-gis.github.io/portfolio/img/favicon.png">
 
-  <link href="https://cgordon-gis.github.io/portfolio/tags/index.xml" rel="alternate" type="application/rss+xml" title="Clare's GIS Portfolio" />
-
 
 </head>
 <body>
@@ -107,21 +105,64 @@
 </div>
 
               
-  <div class="col-xs-12 col-sm-8 col-md-9 content-column">
-    <div class="small-navbar visible-xs">
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  <div class="small-navbar visible-xs">
   <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
   <h1 class="small-navbar-heading"><a href="https://cgordon-gis.github.io/portfolio/">Clare&#39;s GIS Portfolio</a></h1>
 </div>
 
-    <main>
-	<div class="grid">
-	    <div class="row">
-		
-		</div>
-	    </div>
-    </main>
-</div>
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>Points 3</h1>
+         <h2 id="public-bookcases-little-libraries-in-west-yorkshire">Public bookcases (little libraries) in West Yorkshire</h2>
+<p>1st November 2025</p>
+<p><img src="../../img/portfolio/LittleLibraries.png" alt="Public bookcases in West Yorkshire." title="Public bookcases in West Yorkshire."></p>
+<h3 id="data">Data</h3>
+<ul>
+<li><a href="https://download.geofabrik.de/europe/united-kingdom/">OSM data for West Yorkshire downloaded from Geofabrik</a> as .osm.pbf</li>
+<li>Other OSM data downloaded via the OSMInfo and QuickOSM plugins in QGIS.</li>
+</ul>
+<h3 id="tools-used">Tools used</h3>
+<ul>
+<li>GDAL</li>
+<li>QGIS</li>
+</ul>
+<h3 id="what-did-i-learn">What did I learn?</h3>
+<ul>
+<li>First go with <a href="https://gdal.org/en/stable/programs/index.html#gdal-application">new commands in GDAL application</a> at the command line. Will need to get used to them, but seem so much more consistent than &ldquo;traditional&rdquo; commands.</li>
+<li>Trying out clustered points in QGIS. Probably work best with larger numbers?</li>
+</ul>
+<h3 id="what-could-i-do-differently-or-want-to-find-out">What could I do differently or want to find out?</h3>
+<ul>
+<li>It would be interesting to know how the locations of little libraries matches demographics of the areas where they do or don&rsquo;t occur.</li>
+<li>I&rsquo;ve done a rather similar style to my first map in 2023. Could I come up with something more imaginative?</li>
+</ul>
+<h3 id="process">Process</h3>
+<h4 id="preparing-data">Preparing data</h4>
+<ul>
+<li><a href="https://gdal.org/en/stable/programs/index.html">Trying out new commands for GDAL in version 3.11</a> - using via command line.</li>
+</ul>
+<p>To find out layers in osm.pbf file:</p>
+<pre tabindex="0"><code>&gt;&gt;&gt; gdal vector info -i west-yorkshire-251031.osm.pbf -f text` 
+</code></pre><p>Extract little libraries using sql. OSM tag is <code>public_bookcase</code>.</p>
+<pre tabindex="0"><code>&gt;&gt;&gt; gdal vector sql rawdata\west-yorkshire-251031.osm.pbf proc\WestYorkshire.gpkg --output-layer public_bookcase --sql=&#34;SELECT * FROM points WHERE other_tags LIKE &#39;%public_bookcase%&#39;&#34;
+</code></pre><p>Then reproject to British National Grid.</p>
+<pre tabindex="0"><code>&gt;&gt;&gt; gdal vector reproject --src-crs=EPSG:4326 --dst-crs=EPSG:27700 proc\WestYorkshire.gpkg --layer=public_bookcase --append proc\WestYorkshire.gpkg --output-layer=public_bookcase_27700
+</code></pre><h4 id="styling-data-in-qgis-and-preparing-a-layout">Styling data in QGIS and preparing a layout</h4>
+<ul>
+<li>Add public bookcase layer and style with SVG book symbol. Then change style to a <code>point cluster</code>.</li>
+<li>Use <code>OSMInfo</code> plugin to download polygon for West Yorkshire. Styled polygon as dark grey.</li>
+<li>Set map properties background to black.</li>
+<li>Used <code>QuickOSM</code> plugin to download Cities and Towns. Styled as labels with no point. Used <code>Move a label</code> tool to move some labels away from book symbols, then deleted some towns as too many on map.</li>
+<li>Set up a layout and exported as image.</li>
+</ul>
 
+         
+      </div>
+    </div>
+  </div>
+</div>
 
           </div>
       </div>

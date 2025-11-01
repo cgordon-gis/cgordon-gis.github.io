@@ -6,8 +6,15 @@
     <description>Recent content in Portfolios on Clare&#39;s GIS Portfolio</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 30 Nov 2023 20:19:22 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 01 Nov 2025 19:23:22 +0530</lastBuildDate>
     <atom:link href="https://cgordon-gis.github.io/portfolio/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Points 3</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/01_points3/</link>
+      <pubDate>Sat, 01 Nov 2025 19:23:22 +0530</pubDate>
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/01_points3/</guid>
+      <description>&lt;h2 id=&#34;public-bookcases-little-libraries-in-west-yorkshire&#34;&gt;Public bookcases (little libraries) in West Yorkshire&lt;/h2&gt;&#xA;&lt;p&gt;1st November 2025&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../img/portfolio/LittleLibraries.png&#34; alt=&#34;Public bookcases in West Yorkshire.&#34; title=&#34;Public bookcases in West Yorkshire.&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;data&#34;&gt;Data&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://download.geofabrik.de/europe/united-kingdom/&#34;&gt;OSM data for West Yorkshire downloaded from Geofabrik&lt;/a&gt; as .osm.pbf&lt;/li&gt;&#xA;&lt;li&gt;Other OSM data downloaded via the OSMInfo and QuickOSM plugins in QGIS.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tools-used&#34;&gt;Tools used&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;GDAL&lt;/li&gt;&#xA;&lt;li&gt;QGIS&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;what-did-i-learn&#34;&gt;What did I learn?&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;First go with &lt;a href=&#34;https://gdal.org/en/stable/programs/index.html#gdal-application&#34;&gt;new commands in GDAL application&lt;/a&gt; at the command line. Will need to get used to them, but seem so much more consistent than &amp;ldquo;traditional&amp;rdquo; commands.&lt;/li&gt;&#xA;&lt;li&gt;Trying out clustered points in QGIS. Probably work best with larger numbers?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;what-could-i-do-differently-or-want-to-find-out&#34;&gt;What could I do differently or want to find out?&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;It would be interesting to know how the locations of little libraries matches demographics of the areas where they do or don&amp;rsquo;t occur.&lt;/li&gt;&#xA;&lt;li&gt;I&amp;rsquo;ve done a rather similar style to my first map in 2023. Could I come up with something more imaginative?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;process&#34;&gt;Process&lt;/h3&gt;&#xA;&lt;h4 id=&#34;preparing-data&#34;&gt;Preparing data&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gdal.org/en/stable/programs/index.html&#34;&gt;Trying out new commands for GDAL in version 3.11&lt;/a&gt; - using via command line.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;To find out layers in osm.pbf file:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My favourite...</title>
       <link>https://cgordon-gis.github.io/portfolio/portfolio/40_myfavourite/</link>
