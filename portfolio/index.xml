@@ -6,8 +6,15 @@
     <description>Recent content on Clare&#39;s GIS Portfolio</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 11 Nov 2025 19:09:22 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 13 Nov 2025 09:09:22 +0530</lastBuildDate>
     <atom:link href="https://cgordon-gis.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10 minute map</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/71_10minutemap/</link>
+      <pubDate>Thu, 13 Nov 2025 09:09:22 +0530</pubDate>
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/71_10minutemap/</guid>
+      <description>&lt;h2 id=&#34;uk-earthquakes-over-magnitude-3-since-1970&#34;&gt;UK Earthquakes over magnitude 3 since 1970&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../img/portfolio/UKEarthquakes.png&#34; alt=&#34;UK Earthquakes over magnitude 3 since 1970.&#34; title=&#34;UK Earthquakes over magnitude 3 since 1970.&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;data&#34;&gt;Data&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;&#34;&gt;ESRI Living Atlas - BGS UK Earthquakes&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Data acknowledgement: Contains British Geological Survey materials ©UKRI 2025.&lt;/li&gt;&#xA;&lt;li&gt;From information on Living Atlas page: &amp;ldquo;ML: Richter local magnitude of the event (size of the earthquake)&amp;rdquo;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tools-used&#34;&gt;Tools used&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;QGIS.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;what-did-i-learn&#34;&gt;What did I learn?&lt;/h3&gt;&#xA;&lt;p&gt;It&amp;rsquo;s &lt;em&gt;really&lt;/em&gt; difficult to make even a relatively simple map in 10 minutes.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Minimal</title>
       <link>https://cgordon-gis.github.io/portfolio/portfolio/38_minimal2/</link>
