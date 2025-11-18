@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Clare&#39;s GIS Portfolio</title>
+<meta name="description" content="GIS Portfolio">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cgordon-gis.github.io/portfolio/css/bootstrap.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="https://cgordon-gis.github.io/portfolio/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cgordon-gis.github.io/portfolio/css/owl.carousel.css">
+<link rel="stylesheet" href="https://cgordon-gis.github.io/portfolio/css/owl.theme.css">
+
+
+  <link href="https://cgordon-gis.github.io/portfolio/css/style.sea.css" rel="stylesheet" id="theme-stylesheet">
+
+ 
+
+  
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+
+<link href="https://cgordon-gis.github.io/portfolio/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://cgordon-gis.github.io/portfolio/img/favicon.png">
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              <div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+    <div class="sidebar-content">
+	<header>
+	    <h1 class="sidebar-heading"><a href="https://cgordon-gis.github.io/portfolio/">Clare&#39;s GIS Portfolio</a></h1>
+	</header>
+	
+	<p class="sidebar-p">I am a Lecturer in GIS in the School of Earth and Environment at the University of Leeds.</p>
+	
+	<p class="sidebar-p">This portfolio showcases my experiments in GIS inspired by the #30DayMapChallenge on social media during November each year. Many of these maps were uploaded to Mastodon during the challenge in 2023 and I'm attempting to complete more during November 2025.</p>
+	
+	<p class="sidebar-p">Look under 'About' for more information about the challenge.</p>
+	
+	<nav>
+	    <ul class="sidebar-menu">
+		
+		<li><a href="https://cgordon-gis.github.io/portfolio/portfolio/">Portfolio</a></li>
+		
+		<li><a href="https://cgordon-gis.github.io/portfolio/about/">About</a></li>
+		
+		<li><a href="https://cgordon-gis.github.io/portfolio/contact/">Get in touch</a></li>
+		
+	    </ul>
+	    <p class="social">
+  
+  
+  
+  
+  <a href="https://mastodon.social/@ClareEGordon" data-animate-hover="pulse" class="external mastodon" title="Mastodon" rel="me">
+    <i class="fa fa-mastodon"></i>
+  </a>
+  
+  
+  
+  <a href="mailto:c.e.gordon@leeds.ac.uk" data-animate-hover="pulse" class="email" title="E-mail">
+    <i class="fa fa-envelope"></i>
+  </a>
+  
+  
+  <a href="https://www.linkedin.com/in/clare-gordon-979b5a74/" data-animate-hover="pulse" class="external" title="LinkedIn">
+    <i class="fa fa-linkedin"></i>
+  </a>
+  
+  
+  
+  <a href="https://github.com/cgordon-gis" data-animate-hover="pulse" class="external" title="GitHub">
+    <i class="fa fa-github"></i>
+  </a>
+  
+  
+  
+  
+</p>
+
+	</nav>
+
+	<footer>
+	    <div class="copyright">
+		<p class="credit">
+		    
+		    &copy; 2025 Clare Gordon |
+		    
+		    Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub">Kishan B</a>
+
+		</p>
+	    </div>
+	</footer>
+    </div>
+</div>
+
+              
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="https://cgordon-gis.github.io/portfolio/">Clare&#39;s GIS Portfolio</a></h1>
+</div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>A new tool</h1>
+         <h2 id="touching-up-map-images-in-gimp">Touching up map images in GIMP</h2>
+<p>Inspired by articles by Robert Simmon:</p>
+<ul>
+<li><a href="https://medium.com/planet-stories/a-gentle-introduction-to-gdal-part-4-working-with-satellite-data-d3835b5e2971">A Gentle Introduction to GDAL Part 4: Working with Satellite Data</a></li>
+<li><a href="https://medium.com/@robsimmon/making-sense-of-satellite-data-an-open-source-workflow-color-correction-with-gimp-7ddae0360fea">Making Sense of Satellite Data, an Open Source Workflow: Color correction with GIMP</a></li>
+<li><a href="https://medium.com/@robsimmon/making-sense-of-satellite-data-part-5-saturation-sharpness-e21fac6272c7">Making Sense of Satellite Data, Part 5: Saturation &amp; Sharpness</a></li>
+</ul>
+<p>I&rsquo;ll make a true-colour image satellite image of Lochinver and Assynt, N.W. Highlands.</p>
+<p><img src="../../img/portfolio/LochinverSatellite.png" alt="RGB satellite view of Lochinver area, NW Scotland. Sentinel-2a data. Shows faded appearance of image from GDAL and improved version after processing in GIMP." title="RGB satellite view of Lochinver area, NW Scotland. Sentinel-2a data. Shows faded appearance of image from GDAL and improved version after processing in GIMP."></p>
+<h3 id="data">Data</h3>
+<ul>
+<li>Downloaded data from <a href="https://browser.dataspace.copernicus.eu/">Copernicus Browser</a> (free registration) - Sentinel-2A with as small amount of cloud as possible (21st May 2025 and most days for a few weeks before that was virtually cloud-free in UK) for your area of interest.</li>
+</ul>
+<h3 id="tools-used">Tools used</h3>
+<ul>
+<li><a href="https://gdal.org/en/stable/programs/index.html#gdal-application">New GDAL application</a> - on command line. Installed GDAL via <a href="https://www.gisinternals.com/release.php">GIS internals</a> as that gives me version 3.11.3 of GDAL which includes the new commands.</li>
+<li><a href="https://www.gimp.org/">GIMP</a></li>
+</ul>
+<h3 id="what-did-i-learn">What did I learn?</h3>
+<ul>
+<li>Experience with the new GDAL application - much more consistent and not doing so much with a single tool, e.g. gdal_translate.</li>
+<li>How to make alterations to an rgb satellite image in GIMP and then export again retaining GeoTIFF GIS data.</li>
+</ul>
+<h3 id="what-could-i-do-differently-or-want-to-find-out">What could I do differently or want to find out?</h3>
+<ul>
+<li>Need to practice more with the colour correction tools. Wasn&rsquo;t completely happy with this one.</li>
+<li>Someone on Mastodon mentioned it works with elevation - I&rsquo;d like to try that out.</li>
+</ul>
+<h3 id="process-more-detail-about-how-i-made-the-map">Process (more detail about how I made the map)</h3>
+<h4 id="initial-processing-of-data-with-gdal">Initial processing of data with GDAL</h4>
+<p>Want to create an RGB image, so need bands <code>B02</code>, <code>B03</code> and <code>B04</code> from Sentinel-2a.</p>
+<p>Start by checking information of one of bands - particularly to check CRS.</p>
+<pre tabindex="0"><code>gdal raster info rawdata\R10m\T30VUK_20250521T114401_B02_10m.jp2 --format=text
+</code></pre><p>CRS = <code>EPSG:32620</code></p>
+<p>Files are all jp2 and I&rsquo;d like to convert them to <code>tiff</code> and at the same time clip the area I want - to save space.</p>
+<p>Use <code>gdal raster clip</code> with a bounding box of coordinates for the Lochinver area in the correct CRS in the order <code>xmin</code>, <code>ymin</code>, <code>xmax</code>, <code>ymax</code>. Need to do this for all three colour bands.</p>
+<pre tabindex="0"><code>gdal raster clip --bbox=350000,6430000,390000,6460000 --bbox-crs=EPSG:32630 rawdata\R10m\T30VUK_20250521T114401_B02_10m.jp2 processed\Band02.tif
+
+gdal raster clip --bbox=350000,6430000,390000,6460000 --bbox-crs=EPSG:32630 rawdata\R10m\T30VUK_20250521T114401_B03_10m.jp2 processed\Band03.tif
+
+gdal raster clip --bbox=350000,6430000,390000,6460000 --bbox-crs=EPSG:32630 rawdata\R10m\T30VUK_20250521T114401_B04_10m.jp2 processed\Band04.tif
+</code></pre><p>Now I should be able to merge the three bands:</p>
+<ul>
+<li>Red = Band 4</li>
+<li>Green = Band 3</li>
+<li>Blue = Band 2</li>
+</ul>
+<pre tabindex="0"><code>gdal raster stack processed\Band04.tif processed\Band03.tif processed\Band02.tif processed\rgb.tif --co PHOTOMETRIC=RGB --co COMPRESS=DEFLATE
+</code></pre><p>Looks completely black in an image viewer, <strong>but</strong> can stretch values of each band to make the image visible.</p>
+<p>First check min and max values of each band with <code>gdal raster info --mm</code>.</p>
+<pre tabindex="0"><code>gdal raster info --mm processed\rgb.tif --format=text
+</code></pre><p>Make a note of computed min/max for each band. Mine are:</p>
+<ul>
+<li>Band 1 (red): 0, 8256</li>
+<li>Band 2 (green): 0, 8164</li>
+<li>Band 3 (blue): 0, 7712</li>
+</ul>
+<p>All bands are 16-bit integers, so could have values up to <strong>65,536</strong>. To display the image, we can stretch, or scale, each band equally to create a quick preview (note: Not for analysis!).</p>
+<p>Input the highest maximum for the source data.</p>
+<pre tabindex="0"><code>gdal raster scale --datatype UInt16 --src-min 0 --src-max 8256 processed\rgb.tif processed\rgb_stretched.tif --co COMPRESS=DEFLATE
+</code></pre><p>Result should be visible in an image viewer, if not terribly clear.</p>
+<h4 id="optimizing-the-image-in-gimp">Optimizing the image in GIMP</h4>
+<p>GIMP can open GeoTIFF, make alterations, then export again as a GeoTIFF which will open correctly in GIS.</p>
+<h5 id="colour-correction">Colour correction</h5>
+<p>All of this is in inexact science - it depends on your image and your perception of the colours in it.</p>
+<p><a href="https://medium.com/@robsimmon/making-sense-of-satellite-data-an-open-source-workflow-color-correction-with-gimp-7ddae0360fea">https://medium.com/@robsimmon/making-sense-of-satellite-data-an-open-source-workflow-color-correction-with-gimp-7ddae0360fea</a></p>
+<ul>
+<li><strong>Tonal adjustment:</strong> <code>Colors &gt; Curves...</code>. Check <code>Value</code> channel is selected. Click on line across middle and pull up and left to brighten image. Then move lower-left of curve to right. Darker shadows/highlights still bright. May need to pull centre of curve down a bit.</li>
+<li><strong>Black point colour adjustment:</strong> Still in curves, change <code>Channel</code> to <code>Blue</code>. Drag lower-left of line towards right. Aim for towards the point where histogram starts to rise. Repeat with green and red. Suggests moving blue more than green, more than red.</li>
+<li><strong>White point colour adjustment:</strong> May only need to move top-right of red channel slightly to left if have already scaled the image. Probably don&rsquo;t need to do anything to green or blue.</li>
+</ul>
+<p>Difficult! Not quite happy, but running out of time.</p>
+<h5 id="saturation-and-sharpness">Saturation and sharpness</h5>
+<p><a href="https://medium.com/@robsimmon/making-sense-of-satellite-data-part-5-saturation-sharpness-e21fac6272c7">https://medium.com/@robsimmon/making-sense-of-satellite-data-part-5-saturation-sharpness-e21fac6272c7</a></p>
+<ul>
+<li><code>Colors &gt; Hue-Saturation...</code> - best to be light-touch</li>
+<li><code>Filters &gt; Enhance &gt; Sharpen (Unsharp mask)...</code>:
+<ul>
+<li>Set <code>Radius</code> to a large number, e.g. 50.</li>
+<li>Set <code>Amount</code> to somewhere in range of <code>0.10</code> to <code>0.30</code>. Only want to sharpen very slightly!</li>
+</ul>
+</li>
+</ul>
+<h5 id="saving-as-geotiff">Saving as GeoTIFF</h5>
+<p>GIMP can then export the result as a GeoTIFF which will keep the original metadata and open in the correct location back in QGIS.</p>
+<ul>
+<li><code>Export as...</code> and save as <code>tif</code>.</li>
+<li>Tick the box <code>Save GeoTiff data</code>.</li>
+</ul>
+
+         
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+      </div>
+  </div>
+  <script src="https://cgordon-gis.github.io/portfolio/js/jquery.min.js"></script>
+<script src="https://cgordon-gis.github.io/portfolio/js/bootstrap.min.js"></script>
+<script src="https://cgordon-gis.github.io/portfolio/js/jquery.cookie.js"> </script>
+<script src="https://cgordon-gis.github.io/portfolio/js/ekko-lightbox.js"></script>
+<script src="https://cgordon-gis.github.io/portfolio/js/jquery.scrollTo.min.js"></script>
+<script src="https://cgordon-gis.github.io/portfolio/js/masonry.pkgd.min.js"></script>
+<script src="https://cgordon-gis.github.io/portfolio/js/imagesloaded.pkgd.min.js"></script>
+<script src="https://cgordon-gis.github.io/portfolio/js/owl.carousel.min.js"></script>
+<script src="https://cgordon-gis.github.io/portfolio/js/front.js"></script>
+
+
+<a title="Web Analytics" href="https://clicky.com/101443137"><img alt="Clicky" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
+<script async data-id="101443137" src="//static.getclicky.com/js"></script>
+
+
+
+
+</body>
+</html>
