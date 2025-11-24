@@ -6,8 +6,15 @@
     <description>Recent content on Clare&#39;s GIS Portfolio</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 19 Nov 2025 09:09:22 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 24 Nov 2025 16:09:22 +0530</lastBuildDate>
     <atom:link href="https://cgordon-gis.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Places and their names</title>
+      <link>https://cgordon-gis.github.io/portfolio/portfolio/78_placenames/</link>
+      <pubDate>Mon, 24 Nov 2025 16:09:22 +0530</pubDate>
+      <guid>https://cgordon-gis.github.io/portfolio/portfolio/78_placenames/</guid>
+      <description>&lt;h2 id=&#34;gaelic-colour-place-names-around-loch-torridon-nw-scotland&#34;&gt;Gaelic colour place names around Loch Torridon, N.W. Scotland&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../img/portfolio/TorridonColourPlaceNames.png&#34; alt=&#34;A map of place names around Torridon which use Gaelic colour names. For example, dubh is black, uaine is green, buidhe is yellow. These often reflect landscape features or stories lost in the mists of time.&#34; title=&#34;A map of place names around Torridon which use Gaelic colour names. For example, dubh is black, uaine is green, buidhe is yellow. These often reflect landscape features or stories lost in the mists of time.&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Projections</title>
       <link>https://cgordon-gis.github.io/portfolio/portfolio/75_projections/</link>
