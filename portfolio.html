@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9527f784eae13c8f77556462f1e27efb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0f37e76b26fb2656ddd7f15b7e0d7020.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +115,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -140,6 +141,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Clare’s GIS pages</span>
     </a>
@@ -211,16 +214,16 @@ window.Quarto = {
 
 
 
-<p>Since November 2021, <a href="https://30daymapchallenge.com/">30DaysOfMaps</a> has been running on social media. Started by <a href="https://github.com/tjukanovt/30DayMapChallenge">Tuki Tjukanov</a>, this involves map makers, cartographers and anyone else with an interest in maps, creating maps for a series of 30 prompts.</p>
-<p>I didn’t have time in November 2021 or November 2022 to take part, but enjoyed following the hashtag and seeing what other people came up with. Instead I decided to spread my workings over the following years. This portfolio is the result of my efforts, combining the prompts from the two months but also from following the challenge myself during November 2023 and November 2025, when I posted the results to Mastodon.</p>
-<p>There are still many I haven’t done yet, and I have multiple maps for some of the prompts. It’s great fun and I’m learning a lot, both about techniques and new sources of data that I’ll be able to recommend to my students. Below is a selection of the maps I’ve been happiest with.</p>
+<p>Since November 2021, the <a href="https://30daymapchallenge.com/">30 Day Map Challenge</a> has been running on social media. Started by <a href="https://github.com/tjukanovt/30DayMapChallenge">Tuki Tjukanov</a>, this involves map makers, cartographers and anyone else with an interest in maps, creating maps for a series of 30 prompts. Look for the #30DayMapChallenge hashtag.</p>
+<p>I didn’t have time in 2021 or 2022 to take part, but enjoyed following the hashtag and seeing what other people came up with. Instead I decided to use the prompts for inspiration whenever I had an opportunity. This portfolio is the result of my efforts, combining the prompts from the two months but also from following the challenge myself during 2023 and 2025, when I posted the results to Mastodon.</p>
+<p>There are still many prompts I haven’t completed yet, and I have multiple maps for some of the others. It’s great fun and I’m learning a lot, both about techniques and about new sources of data that I’ll be able to recommend to my students. Below is a selection of the maps I’ve been happiest with.</p>
 
 
 
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UUdJUyUyQ0lua3NjYXBl" data-listing-date-sort="1763510400000" data-listing-file-modified-sort="1764954052000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="249">
+<div class="g-col-1" data-index="0" data-categories="UUdJUyUyQ0lua3NjYXBl" data-listing-date-sort="1763510400000" data-listing-file-modified-sort="1771878052000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="275">
 <a href="./portfolio/75-projections/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -251,7 +254,7 @@ Nov 19, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="UUdJUw==" data-listing-date-sort="1763424000000" data-listing-file-modified-sort="1764954542000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="659">
+<div class="g-col-1" data-index="1" data-categories="UUdJUw==" data-listing-date-sort="1763424000000" data-listing-file-modified-sort="1771878282000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="671">
 <a href="./portfolio/74-out-of-this-world/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -999,13 +1002,14 @@ Feb 21, 2022
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
