@@ -161,6 +161,13 @@
     "text": "I’ve scanned my geological field slip and it’s in pdf format, but now I can’t add it to GIS to georeference it\n\nProblem\nAs you’ve discovered QGIS won’t allow you to add pdf files to a map. You need to convert the pdf to png, tiff or jpg formats - any of which will be fine.\n\n\nSolution\nEither rescan the document and select jpg or tiff output, or (and this may be the simpler way to do it!) use one of the many online converters. smallpdf.com is easy to use. It can convert between pdf and various file types including jpg.\nAn alternative for University of Leeds members is to use ABBYY Fine Reader PDF from AppsAnywhere."
   },
   {
+    "objectID": "faq.html#how-can-i-reduce-the-number-of-contours-on-my-map",
+    "href": "faq.html#how-can-i-reduce-the-number-of-contours-on-my-map",
+    "title": "Frequently Asked Questions (FAQ)",
+    "section": "How can I reduce the number of contours on my map?",
+    "text": "How can I reduce the number of contours on my map?\n\nProblem\nThe contours on your map look crowded and are difficult to read. This may be because you are working in a hilly area or because the intervals of the contour dataset you have available are too small, e.g. 5 m when you actually need 10 m.\n\n\nSolution\nYou can use a query in QGIS to show a subset of your contours, for example, only the contours with a value at 10 m intervals rather than 5 m. This creates the layer on your map without having to change the data in the original layer.\n\nDuplicate the existing contour layer (just in case!) and make the original invisible.\nIn the duplicated layer go to properties and the source tab.\nUnder the Provider Feature Filter box, click on Query Builder.\nSelect the appropriate field (in this case PROP_VALUE) and enter the following statement:\n\n\"PROP_VALUE\" %10 - 0\nThe % is the modulus operator. 10 is the multiplier for the contours you want to keep.\n\nClick OK and the layer should only show the 10 m contours on your map now."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
